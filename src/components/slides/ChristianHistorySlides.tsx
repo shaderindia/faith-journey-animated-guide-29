@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Crown, Sword, Church, BookOpen, Zap, Shield } from 'lucide-react';
+import { Crown, Sword, Church, BookOpen, Zap, Shield, Users, Heart } from 'lucide-react';
 import PresentationSlide from '../PresentationSlide';
 
 export const ApostolicAgeSlide: React.FC = () => {
@@ -10,33 +10,36 @@ export const ApostolicAgeSlide: React.FC = () => {
         <Crown className="catholic-icon mx-auto mb-6 w-32 h-32 text-yellow-300 floating" />
         
         <h1 className="slide-header">Apostolic Age (33-100 AD) 👑</h1>
-        <p className="slide-subheader">The Epic Beginning! 🎬</p>
+        <p className="slide-subheader">Where It All Began - A Love Story for the Ages 🎬</p>
         
         <div className="slide-content space-y-6">
           <div className="slide-bullet">
             <Crown className="catholic-icon" />
-            <span><strong>33 AD:</strong> Jesus' Resurrection - The ultimate comeback story! 🔥</span>
+            <span><strong>April 33 AD:</strong> Jesus' Resurrection - Death defeated, hope reborn for every human heart 🔥💀➡️💖</span>
           </div>
           
           <div className="slide-bullet">
             <Zap className="catholic-icon" />
-            <span><strong>33 AD (Pentecost):</strong> Holy Spirit descends - Apostles get superpowers! ⚡</span>
+            <span><strong>May 33 AD (Pentecost):</strong> Holy Spirit descends - Ordinary people become extraordinary witnesses, age no barrier ⚡👥</span>
           </div>
           
           <div className="slide-bullet">
-            <Crown className="catholic-icon" />
-            <span><strong>33-70 AD:</strong> First Christian communities spread like viral content! 📱</span>
+            <Users className="catholic-icon" />
+            <span><strong>33-70 AD:</strong> Faith spreads person to person - grandparents teaching children, children converting parents 📱❤️</span>
           </div>
           
           <div className="slide-bullet">
-            <Crown className="catholic-icon" />
-            <span><strong>50-100 AD:</strong> Gospel message reaches the known world (no internet needed!) 🌍</span>
+            <Heart className="catholic-icon" />
+            <span><strong>50-100 AD:</strong> Gospel reaches every corner of the known world - a message of love crossing all boundaries 🌍💕</span>
           </div>
         </div>
         
         <div className="bible-verse">
           "But you will receive power when the Holy Spirit comes on you; and you will be my witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth."
           <div className="text-yellow-300 mt-2 font-semibold">- Acts 1:8 (NAB)</div>
+          <div className="text-yellow-200 mt-3 text-lg italic">
+            The same Spirit that filled Mary at 14 also strengthened the apostles in their final years
+          </div>
         </div>
       </div>
     </PresentationSlide>
@@ -49,34 +52,37 @@ export const PersecutionSlide: React.FC = () => {
       <div className="text-center">
         <Sword className="catholic-icon mx-auto mb-6 w-32 h-32 text-red-400 floating" />
         
-        <h1 className="slide-header">Age of Persecution (100-313 AD) ⚔️</h1>
-        <p className="slide-subheader">When Being Christian Was Hardcore Mode! 💪</p>
+        <h1 className="slide-header">Age of Persecution (64-313 AD) ⚔️</h1>
+        <p className="slide-subheader">When Love Proved Stronger Than Fear 💪</p>
         
         <div className="slide-content space-y-6">
           <div className="slide-bullet">
             <Sword className="catholic-icon" />
-            <span><strong>64-313 AD:</strong> Roman Empire vs Christians - the ultimate boss battle! 🏛️</span>
+            <span><strong>64-313 AD:</strong> Empire vs Faith - Children watched parents die for love, grandparents blessed grandchildren with courage 🏛️❤️</span>
           </div>
           
           <div className="slide-bullet">
             <Shield className="catholic-icon" />
-            <span><strong>249-251 AD:</strong> Decius persecution - Christians become real-life heroes! 🦸‍♂️</span>
+            <span><strong>249-251 AD:</strong> Decius persecution - Young martyrs like St. Agnes (13) inspired elderly bishops to stand firm 🦸‍♀️👴</span>
           </div>
           
           <div className="slide-bullet">
-            <Sword className="catholic-icon" />
-            <span><strong>100-300 AD:</strong> Secret church meetings in catacombs (underground church!) 🕳️</span>
+            <Users className="catholic-icon" />
+            <span><strong>100-300 AD:</strong> Families gathered in secret catacombs - three generations praying together in darkness 🕳️👨‍👩‍👧‍👦</span>
           </div>
           
           <div className="slide-bullet">
-            <Sword className="catholic-icon" />
-            <span><strong>Result:</strong> Faith grew stronger through trials - level up! 📈</span>
+            <Heart className="catholic-icon" />
+            <span><strong>Result:</strong> Every tear watered the seeds of faith - suffering united all ages in unbreakable bonds 📈💎</span>
           </div>
         </div>
         
         <div className="bible-verse">
           "Blessed are those who are persecuted because of righteousness, for theirs is the kingdom of heaven."
           <div className="text-yellow-300 mt-2 font-semibold">- Matthew 5:10 (NAB)</div>
+          <div className="text-yellow-200 mt-3 text-lg italic">
+            From infant baptisms in hiding to elders' final prayers, faith knew no age limit
+          </div>
         </div>
       </div>
     </PresentationSlide>
@@ -90,33 +96,36 @@ export const ImperialChristianitySlide: React.FC = () => {
         <Church className="catholic-icon mx-auto mb-6 w-32 h-32 text-yellow-300 floating" />
         
         <h1 className="slide-header">Imperial Christianity (313-590 AD) 🏰</h1>
-        <p className="slide-subheader">Christianity Goes Mainstream! 📺</p>
+        <p className="slide-subheader">From Hidden Whispers to Glorious Hymns 📺</p>
         
         <div className="slide-content space-y-6">
           <div className="slide-bullet">
             <Church className="catholic-icon" />
-            <span><strong>313 AD:</strong> Constantine's Edict of Milan - Christianity becomes legal! ⚖️</span>
+            <span><strong>October 28, 312 AD:</strong> Constantine's vision before Milvian Bridge - "In this sign, conquer" ⚖️✨</span>
           </div>
           
           <div className="slide-bullet">
             <Church className="catholic-icon" />
-            <span><strong>325 AD:</strong> Council of Nicaea - establishing the rules of the game! 📜</span>
+            <span><strong>June 19, 325 AD:</strong> Council of Nicaea begins - bishops from every land gathering like spiritual family reunion 📜👥</span>
           </div>
           
           <div className="slide-bullet">
             <Church className="catholic-icon" />
-            <span><strong>380 AD:</strong> Christianity = official religion of Rome! 🎊</span>
+            <span><strong>February 27, 380 AD:</strong> Theodosius makes Christianity the official religion - children could openly pray what grandparents whispered 🎊🙏</span>
           </div>
           
           <div className="slide-bullet">
-            <Church className="catholic-icon" />
-            <span><strong>320-400 AD:</strong> Epic basilicas and churches built everywhere! 🏗️</span>
+            <Heart className="catholic-icon" />
+            <span><strong>320-400 AD:</strong> Magnificent basilicas rise - spaces where every generation could worship together in splendor 🏗️👨‍👩‍👧‍👦</span>
           </div>
         </div>
         
         <div className="bible-verse">
           "And I tell you that you are Peter, and on this rock I will build my church, and the gates of Hades will not overcome it."
           <div className="text-yellow-300 mt-2 font-semibold">- Matthew 16:18 (NAB)</div>
+          <div className="text-yellow-200 mt-3 text-lg italic">
+            The Rock upon which children learned to pray and elders found their peace
+          </div>
         </div>
       </div>
     </PresentationSlide>
@@ -130,33 +139,36 @@ export const EarlyMedievalSlide: React.FC = () => {
         <BookOpen className="catholic-icon mx-auto mb-6 w-32 h-32 text-yellow-300 floating" />
         
         <h1 className="slide-header">Early Medieval (590-1054 AD) 📚</h1>
-        <p className="slide-subheader">Monks Become the Ultimate Librarians! 🤓</p>
+        <p className="slide-subheader">Guardians of Wisdom Through Dark Ages 🤓</p>
         
         <div className="slide-content space-y-6">
           <div className="slide-bullet">
             <BookOpen className="catholic-icon" />
-            <span><strong>590-1054 AD:</strong> Monasticism saves knowledge (human USB drives!) 💾</span>
+            <span><strong>590-1054 AD:</strong> Monks preserve sacred knowledge - young novices learning from aged masters, wisdom passed like precious heirlooms 💾👴👶</span>
           </div>
           
           <div className="slide-bullet">
-            <BookOpen className="catholic-icon" />
-            <span><strong>590-604 AD:</strong> Pope Gregory the Great strengthens papal power! 👑</span>
+            <Crown className="catholic-icon" />
+            <span><strong>September 3, 590 AD:</strong> Gregory the Great becomes Pope - shepherd to both royal courts and humble cottages 👑❤️</span>
           </div>
           
           <div className="slide-bullet">
-            <BookOpen className="catholic-icon" />
-            <span><strong>600-1000 AD:</strong> Missionary work spreads Christianity across Europe! 🗺️</span>
+            <Users className="catholic-icon" />
+            <span><strong>600-1000 AD:</strong> Missionaries cross Europe - St. Boniface baptizing entire families, from newborns to great-grandparents 🗺️👨‍👩‍👧‍👦</span>
           </div>
           
           <div className="slide-bullet">
-            <BookOpen className="catholic-icon" />
-            <span><strong>1054 AD:</strong> Great Schism - East meets West (awkwardly!) 😬</span>
+            <Heart className="catholic-icon" />
+            <span><strong>July 16, 1054 AD:</strong> Great Schism - families divided by geography but united in their love for Christ 😢💔</span>
           </div>
         </div>
         
         <div className="bible-verse">
           "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit."
           <div className="text-yellow-300 mt-2 font-semibold">- Matthew 28:19 (NAB)</div>
+          <div className="text-yellow-200 mt-3 text-lg italic">
+            The Great Commission lived out by missionaries who baptized babies and blessed the dying
+          </div>
         </div>
       </div>
     </PresentationSlide>

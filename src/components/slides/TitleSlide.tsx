@@ -15,9 +15,13 @@ const TitleSlide: React.FC = () => {
           Catholic Youth Faith Journey 🌟
         </h1>
         
-        <p className="slide-subheader text-3xl md:text-4xl mb-12">
+        <p className="slide-subheader text-3xl md:text-4xl mb-8">
           Understanding Our Faith, History, and Mission ✨
         </p>
+        
+        <div className="text-2xl text-yellow-200 mb-8 italic">
+          "A journey of faith that spans generations, touching hearts across all ages"
+        </div>
         
         <div className="flex justify-center space-x-8 mb-8">
           <Heart className="w-16 h-16 text-red-400 floating" style={{ animationDelay: '1s' }} />
@@ -25,13 +29,13 @@ const TitleSlide: React.FC = () => {
           <Cross className="w-16 h-16 text-white floating" style={{ animationDelay: '3s' }} />
         </div>
         
-        <div className="bible-verse max-w-2xl mx-auto">
+        <div className="bible-verse max-w-3xl mx-auto">
           "For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, to give you hope and a future."
           <div className="text-yellow-300 mt-2 font-semibold">- Jeremiah 29:11 (NAB)</div>
         </div>
         
-        <div className="mt-8 text-2xl text-white">
-          Let's explore our amazing faith together! 🚀
+        <div className="mt-8 text-2xl text-white max-w-2xl mx-auto">
+          From the youngest heart to the wisest soul, God's love calls us all home 🏠❤️
         </div>
       </div>
     </PresentationSlide>
