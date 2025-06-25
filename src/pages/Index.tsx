@@ -1,10 +1,12 @@
-
 import React, { useState, useEffect } from 'react';
 import NavigationControls from '@/components/NavigationControls';
 import SlideMenu from '@/components/SlideMenu';
 import TitleSlide from '@/components/slides/TitleSlide';
 import { GodsLoveSlide, SalvationSlide, HopeAndPurposeSlide } from '@/components/slides/WhyChristianSlides';
 import { ApostolicAgeSlide, PersecutionSlide, ImperialChristianitySlide, EarlyMedievalSlide } from '@/components/slides/ChristianHistorySlides';
+import { ModernCatholicsSlide, CatholicYouthTodaySlide } from '@/components/slides/ModernCatholicsSlides';
+import { RosaryHistorySlide, RosaryMysteriesSlide, RosaryPowerSlide } from '@/components/slides/RosarySlides';
+import { SummarySlide, CallToActionSlide } from '@/components/slides/ConclusionSlides';
 
 const Index = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -20,7 +22,13 @@ const Index = () => {
     <PersecutionSlide key="persecution" />,
     <ImperialChristianitySlide key="imperial" />,
     <EarlyMedievalSlide key="medieval" />,
-    // More slides will be added as we build them out
+    <ModernCatholicsSlide key="modern-catholics" />,
+    <CatholicYouthTodaySlide key="youth-today" />,
+    <RosaryHistorySlide key="rosary-history" />,
+    <RosaryMysteriesSlide key="rosary-mysteries" />,
+    <RosaryPowerSlide key="rosary-power" />,
+    <SummarySlide key="summary" />,
+    <CallToActionSlide key="call-to-action" />,
   ];
 
   // Keyboard navigation

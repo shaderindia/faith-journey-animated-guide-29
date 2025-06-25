@@ -15,14 +15,9 @@ const SlideMenu: React.FC<SlideMenuProps> = ({ isOpen, onClose, onGoToSlide }) =
     { title: 'Title Slide', slides: [0], color: 'bg-blue-600' },
     { title: 'Why We Are Christian', slides: [1, 2, 3], color: 'bg-purple-600' },
     { title: 'History of Christianity', slides: [4, 5, 6, 7], color: 'bg-indigo-600' },
-    { title: 'History of the Bible', slides: [8, 9, 10], color: 'bg-blue-700' },
-    { title: 'The Apostolic Mission', slides: [11, 12, 13, 14], color: 'bg-purple-700' },
-    { title: 'Early Church Fathers', slides: [15, 16, 17], color: 'bg-indigo-700' },
-    { title: 'The Holy Rosary', slides: [18, 19, 20], color: 'bg-blue-800' },
-    { title: 'Believing in Jesus', slides: [21, 22, 23], color: 'bg-purple-800' },
-    { title: 'The Seven Sacraments', slides: [24, 25], color: 'bg-indigo-800' },
-    { title: 'Contributing to Community', slides: [26, 27, 28], color: 'bg-blue-900' },
-    { title: 'Conclusion', slides: [29, 30], color: 'bg-purple-900' },
+    { title: 'Modern Day Catholics', slides: [8, 9], color: 'bg-blue-700' },
+    { title: 'The Holy Rosary', slides: [10, 11, 12], color: 'bg-purple-700' },
+    { title: 'Conclusion', slides: [13, 14], color: 'bg-indigo-700' },
   ];
 
   if (!isOpen) return null;
