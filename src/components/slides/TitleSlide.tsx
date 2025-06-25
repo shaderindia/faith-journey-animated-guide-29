@@ -12,11 +12,11 @@ const TitleSlide: React.FC = () => {
         </div>
         
         <h1 className="slide-header text-6xl md:text-8xl mb-4">
-          Catholic Youth Faith Journey
+          Catholic Youth Faith Journey 🌟
         </h1>
         
         <p className="slide-subheader text-3xl md:text-4xl mb-12">
-          Understanding Our Faith, History, and Mission
+          Understanding Our Faith, History, and Mission ✨
         </p>
         
         <div className="flex justify-center space-x-8 mb-8">
@@ -27,7 +27,11 @@ const TitleSlide: React.FC = () => {
         
         <div className="bible-verse max-w-2xl mx-auto">
           "For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, to give you hope and a future."
-          <div className="text-yellow-300 mt-2 font-semibold">- Jeremiah 29:11</div>
+          <div className="text-yellow-300 mt-2 font-semibold">- Jeremiah 29:11 (NAB)</div>
+        </div>
+        
+        <div className="mt-8 text-2xl text-white">
+          Let's explore our amazing faith together! 🚀
         </div>
       </div>
     </PresentationSlide>
