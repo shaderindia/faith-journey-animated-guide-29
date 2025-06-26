@@ -37,11 +37,22 @@ export const ModernCatholicsSlide: React.FC = () => {
         </div>
         
         <div className="bible-verse">
-          "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit"
+          "Go, therefore, and make disciples of all nations, baptizing them in the name of the Father, and of the Son, and of the holy Spirit."
           <div className="text-yellow-300 mt-2 font-semibold">- Matthew 28:19 (NAB)</div>
-          <div className="text-yellow-200 mt-3 text-lg italic">
-            The same Great Commission now reaches every corner of the globe - from TikTok to nursing homes
-          </div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "Let your light shine before others, that they may see your good works and glorify your heavenly Father."
+          <div className="text-yellow-300 mt-2 font-semibold">- Matthew 5:16 (NAB)</div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "As I have loved you, so you also should love one another."
+          <div className="text-yellow-300 mt-2 font-semibold">- John 13:34 (NAB)</div>
+        </div>
+        
+        <div className="text-yellow-200 mt-6 text-lg italic max-w-3xl mx-auto">
+          The same Great Commission now reaches every corner of the globe - from TikTok to nursing homes
         </div>
       </div>
     </PresentationSlide>
@@ -84,9 +95,20 @@ export const CatholicYouthTodaySlide: React.FC = () => {
         <div className="bible-verse">
           "Let no one have contempt for your youth, but set an example for those who believe, in speech, conduct, love, faith, and purity."
           <div className="text-yellow-300 mt-2 font-semibold">- 1 Timothy 4:12 (NAB)</div>
-          <div className="text-yellow-200 mt-3 text-lg italic">
-            Young hearts can teach old souls, and wise elders can guide youthful spirits
-          </div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "Remember your Creator in the days of your youth, before the evil days come and the years approach of which you will say, 'I have no pleasure in them.'"
+          <div className="text-yellow-300 mt-2 font-semibold">- Ecclesiastes 12:1 (NAB)</div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "Young men and women too, old men and children—let them all praise the name of the LORD."
+          <div className="text-yellow-300 mt-2 font-semibold">- Psalm 148:12-13 (NAB)</div>
+        </div>
+        
+        <div className="text-yellow-200 mt-6 text-lg italic max-w-3xl mx-auto">
+          Young hearts can teach old souls, and wise elders can guide youthful spirits in God's love
         </div>
       </div>
     </PresentationSlide>

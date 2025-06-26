@@ -39,9 +39,20 @@ export const SummarySlide: React.FC = () => {
         <div className="bible-verse">
           "Jesus Christ is the same yesterday, today, and forever."
           <div className="text-yellow-300 mt-2 font-semibold">- Hebrews 13:8 (NAB)</div>
-          <div className="text-yellow-200 mt-3 text-lg italic">
-            The same Jesus who blessed children also walked with elders - constant through every season of life
-          </div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "One generation praises your deeds to the next and proclaims your mighty works."
+          <div className="text-yellow-300 mt-2 font-semibold">- Psalm 145:4 (NAB)</div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "We will not hide them from their children; we will tell to the coming generation the glorious deeds of the LORD."
+          <div className="text-yellow-300 mt-2 font-semibold">- Psalm 78:4 (NAB)</div>
+        </div>
+        
+        <div className="text-yellow-200 mt-6 text-lg italic max-w-3xl mx-auto">
+          The same Jesus who blessed children also walked with elders - constant through every season of life
         </div>
       </div>
     </PresentationSlide>
@@ -82,11 +93,27 @@ export const CallToActionSlide: React.FC = () => {
         </div>
         
         <div className="bible-verse">
-          "Go, therefore, and make disciples of all nations, baptizing them in the name of the Father, and of the Son, and of the holy Spirit"
+          "Go, therefore, and make disciples of all nations, baptizing them in the name of the Father, and of the Son, and of the holy Spirit."
           <div className="text-yellow-300 mt-2 font-semibold">- Matthew 28:19 (NAB)</div>
-          <div className="text-yellow-200 mt-3 text-lg italic">
-            The Great Commission is for every generation - your age is your strength, your faith is your gift
-          </div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "You did not choose me, but I chose you and appointed you to go and bear fruit that will remain."
+          <div className="text-yellow-300 mt-2 font-semibold">- John 15:16 (NAB)</div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "How beautiful are the feet of those who bring the good news!"
+          <div className="text-yellow-300 mt-2 font-semibold">- Romans 10:15 (NAB)</div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "Be it done unto me according to your word."
+          <div className="text-yellow-300 mt-2 font-semibold">- Luke 1:38 (NAB)</div>
+        </div>
+        
+        <div className="text-yellow-200 mt-6 text-lg italic max-w-3xl mx-auto">
+          The Great Commission is for every generation - your age is your strength, your faith is your gift to the world
         </div>
         
         <div className="mt-8 text-3xl text-white max-w-3xl mx-auto">

@@ -35,11 +35,17 @@ export const ApostolicAgeSlide: React.FC = () => {
         </div>
         
         <div className="bible-verse">
-          "But you will receive power when the Holy Spirit comes on you; and you will be my witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth."
+          "But you will receive power when the holy Spirit comes upon you, and you will be my witnesses in Jerusalem, throughout Judea and Samaria, and to the ends of the earth."
           <div className="text-yellow-300 mt-2 font-semibold">- Acts 1:8 (NAB)</div>
-          <div className="text-yellow-200 mt-3 text-lg italic">
-            The same Spirit that filled Mary at 14 also strengthened the apostles in their final years
-          </div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "So they went forth and preached everywhere, while the Lord worked with them and confirmed the word through accompanying signs."
+          <div className="text-yellow-300 mt-2 font-semibold">- Mark 16:20 (NAB)</div>
+        </div>
+        
+        <div className="text-yellow-200 mt-6 text-lg italic max-w-3xl mx-auto">
+          The same Spirit that filled Mary at the Annunciation also strengthened the apostles in their final years
         </div>
       </div>
     </PresentationSlide>
@@ -78,11 +84,22 @@ export const PersecutionSlide: React.FC = () => {
         </div>
         
         <div className="bible-verse">
-          "Blessed are those who are persecuted because of righteousness, for theirs is the kingdom of heaven."
+          "Blessed are they who are persecuted for the sake of righteousness, for theirs is the kingdom of heaven."
           <div className="text-yellow-300 mt-2 font-semibold">- Matthew 5:10 (NAB)</div>
-          <div className="text-yellow-200 mt-3 text-lg italic">
-            From infant baptisms in hiding to elders' final prayers, faith knew no age limit
-          </div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "If anyone wishes to come after me, he must deny himself and take up his cross daily and follow me."
+          <div className="text-yellow-300 mt-2 font-semibold">- Luke 9:23 (NAB)</div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "The blood of martyrs is the seed of Christians."
+          <div className="text-yellow-300 mt-2 font-semibold">- Tertullian (150-220 AD)</div>
+        </div>
+        
+        <div className="text-yellow-200 mt-6 text-lg italic max-w-3xl mx-auto">
+          From infant baptisms in hiding to elders' final prayers, faith knew no age limit in persecution
         </div>
       </div>
     </PresentationSlide>
@@ -121,11 +138,22 @@ export const ImperialChristianitySlide: React.FC = () => {
         </div>
         
         <div className="bible-verse">
-          "And I tell you that you are Peter, and on this rock I will build my church, and the gates of Hades will not overcome it."
+          "And so I say to you, you are Peter, and upon this rock I will build my church, and the gates of the netherworld shall not prevail against it."
           <div className="text-yellow-300 mt-2 font-semibold">- Matthew 16:18 (NAB)</div>
-          <div className="text-yellow-200 mt-3 text-lg italic">
-            The Rock upon which children learned to pray and elders found their peace
-          </div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "Every kingdom divided against itself will be laid waste, and no town or house divided against itself will stand."
+          <div className="text-yellow-300 mt-2 font-semibold">- Matthew 12:25 (NAB)</div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "Give to Caesar what belongs to Caesar and to God what belongs to God."
+          <div className="text-yellow-300 mt-2 font-semibold">- Matthew 22:21 (NAB)</div>
+        </div>
+        
+        <div className="text-yellow-200 mt-6 text-lg italic max-w-3xl mx-auto">
+          The Rock upon which children learned to pray and elders found their eternal peace
         </div>
       </div>
     </PresentationSlide>
@@ -164,11 +192,22 @@ export const EarlyMedievalSlide: React.FC = () => {
         </div>
         
         <div className="bible-verse">
-          "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit."
+          "Go, therefore, and make disciples of all nations, baptizing them in the name of the Father, and of the Son, and of the holy Spirit."
           <div className="text-yellow-300 mt-2 font-semibold">- Matthew 28:19 (NAB)</div>
-          <div className="text-yellow-200 mt-3 text-lg italic">
-            The Great Commission lived out by missionaries who baptized babies and blessed the dying
-          </div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "All Scripture is inspired by God and is useful for teaching, for refutation, for correction, and for training in righteousness."
+          <div className="text-yellow-300 mt-2 font-semibold">- 2 Timothy 3:16 (NAB)</div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "How beautiful are the feet of those who bring the good news!"
+          <div className="text-yellow-300 mt-2 font-semibold">- Romans 10:15 (NAB)</div>
+        </div>
+        
+        <div className="text-yellow-200 mt-6 text-lg italic max-w-3xl mx-auto">
+          The Great Commission lived out by missionaries who baptized babies and blessed the dying
         </div>
       </div>
     </PresentationSlide>

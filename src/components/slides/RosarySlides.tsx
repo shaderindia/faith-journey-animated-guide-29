@@ -39,9 +39,20 @@ export const RosaryHistorySlide: React.FC = () => {
         <div className="bible-verse">
           "Hail, favored one! The Lord is with you."
           <div className="text-yellow-300 mt-2 font-semibold">- Luke 1:28 (NAB)</div>
-          <div className="text-yellow-200 mt-3 text-lg italic">
-            The angel's greeting becomes our daily prayer - from first words to final breath
-          </div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "And Mary said: 'My soul proclaims the greatness of the Lord; my spirit rejoices in God my savior.'"
+          <div className="text-yellow-300 mt-2 font-semibold">- Luke 1:46-47 (NAB)</div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "Blessed are you among women, and blessed is the fruit of your womb."
+          <div className="text-yellow-300 mt-2 font-semibold">- Luke 1:42 (NAB)</div>
+        </div>
+        
+        <div className="text-yellow-200 mt-6 text-lg italic max-w-3xl mx-auto">
+          The angel's greeting becomes our daily prayer - from first words to final breath
         </div>
       </div>
     </PresentationSlide>
@@ -84,9 +95,20 @@ export const RosaryMysteriesSlide: React.FC = () => {
         <div className="bible-verse">
           "And Mary kept all these things, reflecting on them in her heart."
           <div className="text-yellow-300 mt-2 font-semibold">- Luke 2:19 (NAB)</div>
-          <div className="text-yellow-200 mt-3 text-lg italic">
-            Like Mary, we ponder Jesus' life - each bead a memory, each prayer a love letter
-          </div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "His mother treasured all these things in her heart."
+          <div className="text-yellow-300 mt-2 font-semibold">- Luke 2:51 (NAB)</div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "Standing by the cross of Jesus were his mother and his mother's sister, Mary the wife of Clopas, and Mary of Magdala."
+          <div className="text-yellow-300 mt-2 font-semibold">- John 19:25 (NAB)</div>
+        </div>
+        
+        <div className="text-yellow-200 mt-6 text-lg italic max-w-3xl mx-auto">
+          Like Mary, we ponder Jesus' life - each bead a memory, each prayer a love letter to Heaven
         </div>
       </div>
     </PresentationSlide>
@@ -129,9 +151,25 @@ export const RosaryPowerSlide: React.FC = () => {
         <div className="bible-verse">
           "Do whatever he tells you."
           <div className="text-yellow-300 mt-2 font-semibold">- John 2:5 (NAB)</div>
-          <div className="text-yellow-200 mt-3 text-lg italic">
-            Mary's words at Cana echo in every Rosary - trust, obey, and watch miracles unfold
-          </div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "Pray without ceasing. In all circumstances give thanks, for this is the will of God for you in Christ Jesus."
+          <div className="text-yellow-300 mt-2 font-semibold">- 1 Thessalonians 5:17-18 (NAB)</div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "The prayer of a righteous person is very powerful."
+          <div className="text-yellow-300 mt-2 font-semibold">- James 5:16 (NAB)</div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "Woman, behold, your son... Behold, your mother."
+          <div className="text-yellow-300 mt-2 font-semibold">- John 19:26-27 (NAB)</div>
+        </div>
+        
+        <div className="text-yellow-200 mt-6 text-lg italic max-w-3xl mx-auto">
+          Mary's words at Cana echo in every Rosary - trust, obey, and watch miracles unfold in every generation
         </div>
       </div>
     </PresentationSlide>

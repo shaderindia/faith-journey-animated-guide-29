@@ -17,7 +17,7 @@ export const GodsLoveSlide: React.FC = () => {
         <div className="slide-content space-y-6">
           <div className="slide-bullet">
             <Heart className="catholic-icon" />
-            <span>God's love embraces us from our first breath to our final moment 🌅🌅</span>
+            <span>God's love embraces us from our first breath to our final moment 🌅</span>
           </div>
           
           <div className="slide-bullet">
@@ -37,11 +37,17 @@ export const GodsLoveSlide: React.FC = () => {
         </div>
         
         <div className="bible-verse">
-          "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."
+          "For God so loved the world that he gave his only Son, so that everyone who believes in him might not perish but might have eternal life."
           <div className="text-yellow-300 mt-2 font-semibold">- John 3:16 (NAB)</div>
-          <div className="text-yellow-200 mt-3 text-lg italic">
-            A love letter written in sacrifice, read by hearts of every generation
-          </div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "See what love the Father has bestowed on us that we may be called the children of God. Yet so we are."
+          <div className="text-yellow-300 mt-2 font-semibold">- 1 John 3:1 (NAB)</div>
+        </div>
+        
+        <div className="text-yellow-200 mt-6 text-lg italic max-w-3xl mx-auto">
+          From the youngest child to the eldest elder, we are all beloved children of the Most High God
         </div>
       </div>
     </PresentationSlide>
@@ -82,11 +88,22 @@ export const SalvationSlide: React.FC = () => {
         </div>
         
         <div className="bible-verse">
-          "Jesus answered, 'I am the way and the truth and the life. No one comes to the Father except through me.'"
+          "Jesus said to him, 'I am the way and the truth and the life. No one comes to the Father except through me.'"
           <div className="text-yellow-300 mt-2 font-semibold">- John 14:6 (NAB)</div>
-          <div className="text-yellow-200 mt-3 text-lg italic">
-            The same Jesus who blessed children also honored the elderly widow's offering
-          </div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "For by grace you have been saved through faith, and this is not from you; it is the gift of God; it is not from works, so no one may boast."
+          <div className="text-yellow-300 mt-2 font-semibold">- Ephesians 2:8-9 (NAB)</div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "Come to me, all you who labor and are burdened, and I will give you rest."
+          <div className="text-yellow-300 mt-2 font-semibold">- Matthew 11:28 (NAB)</div>
+        </div>
+        
+        <div className="text-yellow-200 mt-6 text-lg italic max-w-3xl mx-auto">
+          The same Jesus who blessed children also honored the elderly widow's offering - salvation for all ages
         </div>
       </div>
     </PresentationSlide>
@@ -127,11 +144,22 @@ export const HopeAndPurposeSlide: React.FC = () => {
         </div>
         
         <div className="bible-verse">
-          "For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, to give you hope and a future."
+          "For I know well the plans I have in mind for you—oracle of the LORD—plans for your welfare and not for woe, so as to give you a future of hope."
           <div className="text-yellow-300 mt-2 font-semibold">- Jeremiah 29:11 (NAB)</div>
-          <div className="text-yellow-200 mt-3 text-lg italic">
-            From teenage dreams to grandparent prayers, His plans span lifetimes
-          </div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "We know that all things work for good for those who love God, who are called according to his purpose."
+          <div className="text-yellow-300 mt-2 font-semibold">- Romans 8:28 (NAB)</div>
+        </div>
+
+        <div className="bible-verse mt-4">
+          "You are the light of the world. A city set on a mountain cannot be hidden."
+          <div className="text-yellow-300 mt-2 font-semibold">- Matthew 5:14 (NAB)</div>
+        </div>
+        
+        <div className="text-yellow-200 mt-6 text-lg italic max-w-3xl mx-auto">
+          From teenage dreams to grandparent prayers, His plans span lifetimes and generations
         </div>
       </div>
     </PresentationSlide>

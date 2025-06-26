@@ -30,8 +30,18 @@ const TitleSlide: React.FC = () => {
         </div>
         
         <div className="bible-verse max-w-3xl mx-auto">
-          "For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, to give you hope and a future."
+          "For I know well the plans I have in mind for you—oracle of the LORD—plans for your welfare and not for woe, so as to give you a future of hope."
           <div className="text-yellow-300 mt-2 font-semibold">- Jeremiah 29:11 (NAB)</div>
+        </div>
+
+        <div className="bible-verse mt-4 max-w-3xl mx-auto">
+          "Train the young in the way they should go; even when old, they will not swerve from it."
+          <div className="text-yellow-300 mt-2 font-semibold">- Proverbs 22:6 (NAB)</div>
+        </div>
+
+        <div className="bible-verse mt-4 max-w-3xl mx-auto">
+          "One generation praises your deeds to the next and proclaims your mighty works."
+          <div className="text-yellow-300 mt-2 font-semibold">- Psalm 145:4 (NAB)</div>
         </div>
         
         <div className="mt-8 text-2xl text-white max-w-2xl mx-auto">
