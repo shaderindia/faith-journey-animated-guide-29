@@ -7,7 +7,15 @@ export const RosaryHistorySlide: React.FC = () => {
   return (
     <PresentationSlide background="stained-glass">
       <div className="text-center">
-        <Heart className="catholic-icon mx-auto mb-6 w-32 h-32 text-red-400 floating" />
+        {/* Mary and Jesus image */}
+        <div className="mb-6 flex justify-center relative">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=350&h=350&fit=crop&crop=center" 
+            alt="Mary and Jesus - Holy Rosary" 
+            className="w-40 h-40 rounded-full object-cover border-4 border-red-400 floating shadow-2xl"
+          />
+          <Heart className="absolute -top-4 -right-4 w-20 h-20 text-red-400 floating" style={{ animationDelay: '0.5s' }} />
+        </div>
         
         <h1 className="slide-header">The Holy Rosary 📿</h1>
         <p className="slide-subheader text-2xl text-yellow-200 mb-6">
@@ -34,6 +42,25 @@ export const RosaryHistorySlide: React.FC = () => {
             <Cross className="catholic-icon" />
             <span><strong>2002:</strong> Pope John Paul II adds Luminous Mysteries - new light for old prayers, bridging generations 💡📿</span>
           </div>
+        </div>
+        
+        {/* Jesus images in corners */}
+        <div className="absolute top-10 left-10 opacity-25">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=120&h=120&fit=crop&crop=center" 
+            alt="Child Jesus" 
+            className="w-16 h-16 rounded-full object-cover floating"
+            style={{ animationDelay: '2s' }}
+          />
+        </div>
+        
+        <div className="absolute bottom-10 right-10 opacity-25">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=120&h=120&fit=crop&crop=center" 
+            alt="Jesus Christ" 
+            className="w-16 h-16 rounded-full object-cover floating"
+            style={{ animationDelay: '4s' }}
+          />
         </div>
         
         <div className="bible-verse">
@@ -63,7 +90,34 @@ export const RosaryMysteriesSlide: React.FC = () => {
   return (
     <PresentationSlide background="cross">
       <div className="text-center">
-        <Star className="catholic-icon mx-auto mb-6 w-32 h-32 text-yellow-300 floating" />
+        {/* Jesus in different life stages */}
+        <div className="mb-6 flex justify-center space-x-4">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=200&h=200&fit=crop&crop=center" 
+            alt="Baby Jesus - Joyful Mysteries" 
+            className="w-20 h-20 rounded-full object-cover border-2 border-yellow-300 floating shadow-lg"
+          />
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=200&h=200&fit=crop&crop=center" 
+            alt="Jesus Teaching - Luminous Mysteries" 
+            className="w-24 h-24 rounded-full object-cover border-2 border-blue-300 floating shadow-lg"
+            style={{ animationDelay: '1s' }}
+          />
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=200&h=200&fit=crop&crop=center" 
+            alt="Jesus Crucified - Sorrowful Mysteries" 
+            className="w-20 h-20 rounded-full object-cover border-2 border-red-400 floating shadow-lg"
+            style={{ animationDelay: '2s' }}
+          />
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=200&h=200&fit=crop&crop=center" 
+            alt="Risen Jesus - Glorious Mysteries" 
+            className="w-22 h-22 rounded-full object-cover border-2 border-white floating shadow-lg"
+            style={{ animationDelay: '3s' }}
+          />
+        </div>
+        
+        <Star className="catholic-icon mx-auto mb-6 w-24 h-24 text-yellow-300 floating" />
         
         <h1 className="slide-header">The Four Sets of Mysteries ✨</h1>
         <p className="slide-subheader text-2xl text-yellow-200 mb-6">
@@ -119,7 +173,15 @@ export const RosaryPowerSlide: React.FC = () => {
   return (
     <PresentationSlide background="gradient">
       <div className="text-center">
-        <Cross className="catholic-icon mx-auto mb-6 w-32 h-32 text-yellow-300 floating" />
+        {/* Jesus with outstretched arms */}
+        <div className="mb-6 flex justify-center relative">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=400&h=400&fit=crop&crop=center" 
+            alt="Jesus Christ with outstretched arms" 
+            className="w-48 h-48 rounded-lg object-cover border-4 border-yellow-300 floating shadow-2xl"
+          />
+          <Cross className="alternate -top-6 -right-6 w-24 h-24 text-yellow-300 floating" style={{ animationDelay: '0.5s' }} />
+        </div>
         
         <h1 className="slide-header">The Power of the Rosary 💪</h1>
         <p className="slide-subheader text-2xl text-yellow-200 mb-6">
@@ -146,6 +208,25 @@ export const RosaryPowerSlide: React.FC = () => {
             <Book className="catholic-icon" />
             <span><strong>Biblical Prayer:</strong> Every Hail Mary echoes Scripture - the Word made flesh in beads and breath 📖🙏</span>
           </div>
+        </div>
+        
+        {/* Small Jesus images around the content */}
+        <div className="absolute top-20 left-16 opacity-30">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=100&h=100&fit=crop&crop=center" 
+            alt="Jesus praying" 
+            className="w-12 h-12 rounded-full object-cover floating"
+            style={{ animationDelay: '2s' }}
+          />
+        </div>
+        
+        <div className="absolute top-20 right-16 opacity-30">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=100&h=100&fit=crop&crop=center" 
+            alt="Jesus blessing" 
+            className="w-12 h-12 rounded-full object-cover floating"
+            style={{ animationDelay: '4s' }}
+          />
         </div>
         
         <div className="bible-verse">

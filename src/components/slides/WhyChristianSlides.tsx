@@ -7,7 +7,15 @@ export const GodsLoveSlide: React.FC = () => {
   return (
     <PresentationSlide background="gradient">
       <div className="text-center">
-        <Heart className="catholic-icon mx-auto mb-6 w-32 h-32 text-red-400 floating" />
+        {/* Jesus image with heart */}
+        <div className="mb-6 flex justify-center relative">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=300&h=300&fit=crop&crop=center" 
+            alt="Jesus showing God's Love" 
+            className="w-40 h-40 rounded-full object-cover border-4 border-red-400 floating shadow-2xl"
+          />
+          <Heart className="absolute -top-2 -right-2 w-16 h-16 text-red-400 floating" style={{ animationDelay: '1s' }} />
+        </div>
         
         <h1 className="slide-header">God's Unconditional Love 💕</h1>
         <p className="slide-subheader text-2xl text-yellow-200 mb-6">
@@ -36,6 +44,16 @@ export const GodsLoveSlide: React.FC = () => {
           </div>
         </div>
         
+        {/* Small Jesus images in corners */}
+        <div className="absolute top-20 left-20 opacity-30">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=150&h=150&fit=crop&crop=center" 
+            alt="Jesus" 
+            className="w-16 h-16 rounded-full object-cover floating"
+            style={{ animationDelay: '3s' }}
+          />
+        </div>
+        
         <div className="bible-verse">
           "For God so loved the world that he gave his only Son, so that everyone who believes in him might not perish but might have eternal life."
           <div className="text-yellow-300 mt-2 font-semibold">- John 3:16 (NAB)</div>
@@ -58,7 +76,15 @@ export const SalvationSlide: React.FC = () => {
   return (
     <PresentationSlide background="cross">
       <div className="text-center">
-        <Cross className="catholic-icon mx-auto mb-6 w-32 h-32 text-yellow-300 floating" />
+        {/* Jesus on the cross image */}
+        <div className="mb-6 flex justify-center relative">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=350&h=350&fit=crop&crop=center" 
+            alt="Jesus Christ Crucified" 
+            className="w-44 h-44 rounded-lg object-cover border-4 border-yellow-300 floating shadow-2xl"
+          />
+          <Cross className="absolute -top-4 -right-4 w-20 h-20 text-yellow-300 floating" style={{ animationDelay: '0.5s' }} />
+        </div>
         
         <h1 className="slide-header">Salvation Through Jesus 🙏</h1>
         <p className="slide-subheader text-2xl text-yellow-200 mb-6">
@@ -85,6 +111,25 @@ export const SalvationSlide: React.FC = () => {
             <Home className="catholic-icon" />
             <span>It's never too late to come home, never too early to start the journey 🏠💝</span>
           </div>
+        </div>
+        
+        {/* Multiple Jesus images around the slide */}
+        <div className="absolute top-10 right-10 opacity-25">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=120&h=120&fit=crop&crop=center" 
+            alt="Risen Jesus" 
+            className="w-20 h-20 rounded-full object-cover floating"
+            style={{ animationDelay: '2s' }}
+          />
+        </div>
+        
+        <div className="absolute bottom-20 left-10 opacity-25">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=120&h=120&fit=crop&crop=center" 
+            alt="Jesus Christ" 
+            className="w-20 h-20 rounded-full object-cover floating"
+            style={{ animationDelay: '4s' }}
+          />
         </div>
         
         <div className="bible-verse">
@@ -114,7 +159,16 @@ export const HopeAndPurposeSlide: React.FC = () => {
   return (
     <PresentationSlide background="stained-glass">
       <div className="text-center">
-        <Star className="catholic-icon mx-auto mb-6 w-32 h-32 text-yellow-300 floating" />
+        {/* Jesus as light of the world */}
+        <div className="mb-6 flex justify-center relative">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=300&h=300&fit=crop&crop=center" 
+            alt="Jesus Light of the World" 
+            className="w-36 h-36 rounded-full object-cover border-4 border-yellow-300 floating shadow-2xl"
+          />
+          <Star className="absolute -top-2 -right-2 w-16 h-16 text-yellow-300 floating" style={{ animationDelay: '1s' }} />
+          <Star className="absolute -bottom-2 -left-2 w-12 h-12 text-white floating" style={{ animationDelay: '2s' }} />
+        </div>
         
         <h1 className="slide-header">Hope and Purpose 🌟</h1>
         <p className="slide-subheader text-2xl text-yellow-200 mb-6">
@@ -141,6 +195,25 @@ export const HopeAndPurposeSlide: React.FC = () => {
             <Heart className="catholic-icon" />
             <span>Whether you're starting your story or nearing its earthly end, every chapter matters to God 📚🌅</span>
           </div>
+        </div>
+        
+        {/* Jesus images in multiple positions */}
+        <div className="absolute top-16 left-16 opacity-20">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=100&h=100&fit=crop&crop=center" 
+            alt="Jesus" 
+            className="w-14 h-14 rounded-full object-cover floating"
+            style={{ animationDelay: '3s' }}
+          />
+        </div>
+        
+        <div className="absolute bottom-16 right-16 opacity-20">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=100&h=100&fit=crop&crop=center" 
+            alt="Jesus" 
+            className="w-14 h-14 rounded-full object-cover floating"
+            style={{ animationDelay: '5s' }}
+          />
         </div>
         
         <div className="bible-verse">

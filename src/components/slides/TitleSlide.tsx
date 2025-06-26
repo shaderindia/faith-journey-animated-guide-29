@@ -7,6 +7,15 @@ const TitleSlide: React.FC = () => {
   return (
     <PresentationSlide background="stained-glass">
       <div className="text-center">
+        {/* Jesus image at the top */}
+        <div className="mb-6 flex justify-center">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=400&h=400&fit=crop&crop=center" 
+            alt="Sacred Heart of Jesus" 
+            className="w-32 h-32 rounded-full object-cover border-4 border-yellow-300 floating shadow-2xl"
+          />
+        </div>
+        
         <div className="mb-8 flex justify-center">
           <Cross className="w-24 h-24 text-yellow-300 floating" />
         </div>
@@ -27,6 +36,25 @@ const TitleSlide: React.FC = () => {
           <Heart className="w-16 h-16 text-red-400 floating" style={{ animationDelay: '1s' }} />
           <Star className="w-16 h-16 text-yellow-300 floating" style={{ animationDelay: '2s' }} />
           <Cross className="w-16 h-16 text-white floating" style={{ animationDelay: '3s' }} />
+        </div>
+        
+        {/* Additional Jesus images on sides */}
+        <div className="absolute left-10 top-1/2 transform -translate-y-1/2 opacity-20">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=200&h=200&fit=crop&crop=center" 
+            alt="Jesus Christ" 
+            className="w-24 h-24 rounded-full object-cover floating"
+            style={{ animationDelay: '2s' }}
+          />
+        </div>
+        
+        <div className="absolute right-10 top-1/2 transform -translate-y-1/2 opacity-20">
+          <img 
+            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=200&h=200&fit=crop&crop=center" 
+            alt="Jesus Christ" 
+            className="w-24 h-24 rounded-full object-cover floating"
+            style={{ animationDelay: '4s' }}
+          />
         </div>
         
         <div className="bible-verse max-w-3xl mx-auto">
