@@ -7,73 +7,50 @@ const TitleSlide: React.FC = () => {
   return (
     <PresentationSlide background="stained-glass">
       <div className="text-center">
-        {/* Jesus image at the top */}
-        <div className="mb-6 flex justify-center">
-          <img 
-            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=400&h=400&fit=crop&crop=center" 
-            alt="Sacred Heart of Jesus" 
-            className="w-32 h-32 rounded-full object-cover border-4 border-yellow-300 floating shadow-2xl"
-          />
-        </div>
-        
         <div className="mb-8 flex justify-center">
-          <Cross className="w-24 h-24 text-yellow-300 floating" />
+          <Cross className="w-32 h-32 text-yellow-300 floating" />
         </div>
         
-        <h1 className="slide-header text-6xl md:text-8xl mb-4">
+        <h1 className="slide-header text-7xl md:text-9xl mb-6">
           Catholic Youth Faith Journey 🌟
         </h1>
         
-        <p className="slide-subheader text-3xl md:text-4xl mb-8">
+        <p className="slide-subheader text-4xl md:text-5xl mb-10">
           Understanding Our Faith, History, and Mission ✨
         </p>
         
-        <div className="text-2xl text-yellow-200 mb-8 italic">
+        <div className="text-3xl text-yellow-200 mb-10 italic font-bold">
           "A journey of faith that spans generations, touching hearts across all ages"
         </div>
         
-        <div className="flex justify-center space-x-8 mb-8">
-          <Heart className="w-16 h-16 text-red-400 floating" style={{ animationDelay: '1s' }} />
-          <Star className="w-16 h-16 text-yellow-300 floating" style={{ animationDelay: '2s' }} />
-          <Cross className="w-16 h-16 text-white floating" style={{ animationDelay: '3s' }} />
+        <div className="flex justify-center space-x-12 mb-10">
+          <Heart className="w-20 h-20 text-red-400 floating cursor-pointer hover:scale-110 transition-transform" style={{ animationDelay: '1s' }} />
+          <Star className="w-20 h-20 text-yellow-300 floating cursor-pointer hover:scale-110 transition-transform" style={{ animationDelay: '2s' }} />
+          <Cross className="w-20 h-20 text-white floating cursor-pointer hover:scale-110 transition-transform" style={{ animationDelay: '3s' }} />
         </div>
         
-        {/* Additional Jesus images on sides */}
-        <div className="absolute left-10 top-1/2 transform -translate-y-1/2 opacity-20">
-          <img 
-            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=200&h=200&fit=crop&crop=center" 
-            alt="Jesus Christ" 
-            className="w-24 h-24 rounded-full object-cover floating"
-            style={{ animationDelay: '2s' }}
-          />
-        </div>
-        
-        <div className="absolute right-10 top-1/2 transform -translate-y-1/2 opacity-20">
-          <img 
-            src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=200&h=200&fit=crop&crop=center" 
-            alt="Jesus Christ" 
-            className="w-24 h-24 rounded-full object-cover floating"
-            style={{ animationDelay: '4s' }}
-          />
-        </div>
-        
-        <div className="bible-verse max-w-3xl mx-auto">
+        <div className="bible-verse max-w-4xl mx-auto text-2xl">
           "For I know well the plans I have in mind for you—oracle of the LORD—plans for your welfare and not for woe, so as to give you a future of hope."
-          <div className="text-yellow-300 mt-2 font-semibold">- Jeremiah 29:11 (NAB)</div>
+          <div className="text-yellow-300 mt-3 font-bold text-xl">- Jeremiah 29:11 (NAB)</div>
         </div>
 
-        <div className="bible-verse mt-4 max-w-3xl mx-auto">
+        <div className="bible-verse mt-6 max-w-4xl mx-auto text-2xl">
           "Train the young in the way they should go; even when old, they will not swerve from it."
-          <div className="text-yellow-300 mt-2 font-semibold">- Proverbs 22:6 (NAB)</div>
-        </div>
-
-        <div className="bible-verse mt-4 max-w-3xl mx-auto">
-          "One generation praises your deeds to the next and proclaims your mighty works."
-          <div className="text-yellow-300 mt-2 font-semibold">- Psalm 145:4 (NAB)</div>
+          <div className="text-yellow-300 mt-3 font-bold text-xl">- Proverbs 22:6 (NAB)</div>
         </div>
         
-        <div className="mt-8 text-2xl text-white max-w-2xl mx-auto">
+        <div className="mt-10 text-3xl text-white max-w-3xl mx-auto font-semibold">
           From the youngest heart to the wisest soul, God's love calls us all home 🏠❤️
+        </div>
+
+        {/* Interactive navigation hint */}
+        <div className="mt-8 p-4 bg-black bg-opacity-30 rounded-lg max-w-2xl mx-auto">
+          <div className="text-yellow-200 text-xl font-bold mb-2">📖 How to Navigate:</div>
+          <div className="text-white text-lg">
+            • Press ➡️ ARROW KEYS to move forward/backward<br/>
+            • Press M for MENU to jump to any slide<br/>
+            • Press HOME to return here anytime
+          </div>
         </div>
       </div>
     </PresentationSlide>
