@@ -417,9 +417,9 @@
 
     <!-- Navigation Controls -->
     <div class="navigation">
-        <button class="nav-btn" id="prevBtn" onclick="previousSlide()">◀ Previous</button>
+        <button class="nav-btn" id="prevBtn">◀ Previous</button>
         <button class="nav-btn" onclick="goToSlide(0)">🏠 Home</button>
-        <button class="nav-btn" id="nextBtn" onclick="nextSlide()">Next ▶</button>
+        <button class="nav-btn" id="nextBtn">Next ▶</button>
     </div>
 
     <!-- Progress Dots -->
@@ -446,6 +446,7 @@
         // Initialize progress dots
         function initProgressDots() {
             const dotsContainer = document.getElementById('progressDots');
+            dotsContainer.innerHTML = ''; // Clear existing dots
             for (let i = 0; i < totalSlides; i++) {
                 const dot = document.createElement('div');
                 dot.className = 'dot';
@@ -468,32 +469,40 @@
             
             // Update counter
             document.getElementById('currentSlide').textContent = currentSlideIndex + 1;
-            document.getElementById('totalSlides').textContent = totalSlides;
             
             // Update navigation buttons
-            document.getElementById('prevBtn').disabled = currentSlideIndex === 0;
-            document.getElementById('nextBtn').disabled = currentSlideIndex === totalSlides - 1;
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            if (prevBtn) prevBtn.disabled = currentSlideIndex === 0;
+            if (nextBtn) nextBtn.disabled = currentSlideIndex === totalSlides - 1;
         }
 
         // Navigation functions
         function nextSlide() {
+            console.log('Next slide called, current:', currentSlideIndex);
             if (currentSlideIndex < totalSlides - 1) {
                 currentSlideIndex++;
                 updateSlide();
+                console.log('Moved to slide:', currentSlideIndex);
             }
         }
 
         function previousSlide() {
+            console.log('Previous slide called, current:', currentSlideIndex);
             if (currentSlideIndex > 0) {
                 currentSlideIndex--;
                 updateSlide();
+                console.log('Moved to slide:', currentSlideIndex);
             }
         }
 
         function goToSlide(index) {
+            console.log('Go to slide called with index:', index);
             if (index >= 0 && index < totalSlides) {
                 currentSlideIndex = index;
                 updateSlide();
+                console.log('Moved to slide:', currentSlideIndex);
             }
         }
 
@@ -522,9 +531,23 @@
 
         // Initialize presentation
         document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM loaded, total slides:', totalSlides);
             initProgressDots();
             updateSlide();
-            document.getElementById('totalSlides').textContent = totalSlides;
+            
+            // Add event listeners to navigation buttons
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            if (prevBtn) {
+                prevBtn.addEventListener('click', previousSlide);
+            }
+            
+            if (nextBtn) {
+                nextBtn.addEventListener('click', nextSlide);
+            }
+            
+            console.log('Event listeners added to buttons');
         });
 
         // Prevent context menu and text selection for better presentation experience
