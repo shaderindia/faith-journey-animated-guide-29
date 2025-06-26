@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ChevronLeft, ChevronRight, Home, Menu } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Home, Menu, Maximize, Minimize } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -11,6 +11,8 @@ interface NavigationControlsProps {
   onNext: () => void;
   onGoToSlide: (slideIndex: number) => void;
   onShowMenu: () => void;
+  isFullscreen: boolean;
+  onToggleFullscreen: () => void;
 }
 
 const NavigationControls: React.FC<NavigationControlsProps> = ({
@@ -19,7 +21,9 @@ const NavigationControls: React.FC<NavigationControlsProps> = ({
   onPrevious,
   onNext,
   onGoToSlide,
-  onShowMenu
+  onShowMenu,
+  isFullscreen,
+  onToggleFullscreen
 }) => {
   return (
     <>
@@ -51,16 +55,36 @@ const NavigationControls: React.FC<NavigationControlsProps> = ({
       </div>
 
       {/* Top navigation with larger buttons */}
-      <div className="fixed top-4 left-4 z-50">
-        <Button
-          variant="secondary"
-          size="lg"
-          onClick={onShowMenu}
-          className="bg-white bg-opacity-30 hover:bg-opacity-50 border-white border-opacity-30 w-14 h-14 mr-4"
-        >
-          <Menu className="w-8 h-8 text-white" />
-        </Button>
-        <div className="text-white text-center mt-1 text-xs font-bold">MENU (M)</div>
+      <div className="fixed top-4 left-4 z-50 flex space-x-4">
+        <div>
+          <Button
+            variant="secondary"
+            size="lg"
+            onClick={onShowMenu}
+            className="bg-white bg-opacity-30 hover:bg-opacity-50 border-white border-opacity-30 w-14 h-14"
+          >
+            <Menu className="w-8 h-8 text-white" />
+          </Button>
+          <div className="text-white text-center mt-1 text-xs font-bold">MENU (M)</div>
+        </div>
+        
+        <div>
+          <Button
+            variant="secondary"
+            size="lg"
+            onClick={onToggleFullscreen}
+            className="bg-white bg-opacity-30 hover:bg-opacity-50 border-white border-opacity-30 w-14 h-14"
+          >
+            {isFullscreen ? (
+              <Minimize className="w-8 h-8 text-white" />
+            ) : (
+              <Maximize className="w-8 h-8 text-white" />
+            )}
+          </Button>
+          <div className="text-white text-center mt-1 text-xs font-bold">
+            {isFullscreen ? 'EXIT (ESC)' : 'FULL'}
+          </div>
+        </div>
       </div>
 
       <div className="fixed top-4 right-4 z-50">
@@ -102,7 +126,7 @@ const NavigationControls: React.FC<NavigationControlsProps> = ({
         <div className="text-sm">
           <div>← → Arrow keys to navigate</div>
           <div>M for menu • HOME key for title</div>
-          <div>ESC to close menu</div>
+          <div>F for fullscreen • ESC to exit</div>
         </div>
       </div>
     </>

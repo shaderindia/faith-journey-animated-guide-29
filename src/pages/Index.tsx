@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import NavigationControls from '@/components/NavigationControls';
 import SlideMenu from '@/components/SlideMenu';
@@ -11,6 +12,7 @@ import { SummarySlide, CallToActionSlide } from '@/components/slides/ConclusionS
 const Index = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   // Define all slides
   const slides = [
@@ -30,6 +32,31 @@ const Index = () => {
     <SummarySlide key="summary" />,
     <CallToActionSlide key="call-to-action" />,
   ];
+
+  // Full-screen functionality
+  const toggleFullscreen = async () => {
+    try {
+      if (!document.fullscreenElement) {
+        await document.documentElement.requestFullscreen();
+        setIsFullscreen(true);
+      } else {
+        await document.exitFullscreen();
+        setIsFullscreen(false);
+      }
+    } catch (error) {
+      console.log('Fullscreen toggle failed:', error);
+    }
+  };
+
+  // Listen for fullscreen changes
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement);
+    };
+
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
+  }, []);
 
   // Keyboard navigation
   useEffect(() => {
@@ -53,11 +80,19 @@ const Index = () => {
           setCurrentSlide(slides.length - 1);
           break;
         case 'Escape':
-          setShowMenu(false);
+          if (document.fullscreenElement) {
+            document.exitFullscreen();
+          } else {
+            setShowMenu(false);
+          }
           break;
         case 'm':
         case 'M':
           setShowMenu(!showMenu);
+          break;
+        case 'f':
+        case 'F':
+          toggleFullscreen();
           break;
       }
     };
@@ -99,6 +134,8 @@ const Index = () => {
         onNext={nextSlide}
         onGoToSlide={goToSlide}
         onShowMenu={() => setShowMenu(true)}
+        isFullscreen={isFullscreen}
+        onToggleFullscreen={toggleFullscreen}
       />
 
       {/* Slide Menu */}
@@ -111,7 +148,7 @@ const Index = () => {
       {/* Keyboard shortcuts hint */}
       <div className="fixed bottom-4 left-4 z-40 bg-black bg-opacity-50 text-white px-3 py-2 rounded text-xs">
         <div>← → Arrow keys to navigate</div>
-        <div>M for menu • ESC to close</div>
+        <div>M for menu • F for fullscreen • ESC to close</div>
       </div>
     </div>
   );
